@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>滤镜</title>
+    <style type="text/css">
+        img{
+            width: 400px;
+            margin: auto;
+            height: 400px;
+            display: block;
+            /*滤镜属性*/
+            /*-webkit-filter:grayscale(0.5)*/
+
+            transition:all 15s;
+
+            /*sepia:*/
+            /*褐色属性*/
+            /*-webkit-filter:sepia(0.5);*/
+
+            /*设置模糊度
+            注意括号的单位*/
+            /*-webkit-filter:blur(5px)*/
+
+            /*设置对比度
+            正常值是1
+            数值越小就灰，0时就为灰色
+            反之则越白*/
+            /*-webkit-filter:contrast(0.5);*/
+
+            /*设置饱和度*/
+            /*-webkit-filter:saturate(2);*/
+
+            /*设置胶片底色
+            /*-webkit-filter:invert(1);*/
+            /*另外还有胶片的旋转
+            注意旋转角度的单位，deg是选转的度数
+            -webkit-filter:hue-rotate(20deg);
+            */
+
+            -webkit-filter:brightness(10) grayscale(1)
+
+        }
+        img:hover{
+            /*-webkit-filter:none*/
+            -webkit-filter:brightness(1);
+        }
+    </style>
+</head>
+<body>
+    <img src="favor_images/ice%20cream.jpg" alt=""/>
+
+</body>
+</html>
